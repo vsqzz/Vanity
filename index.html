@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kai's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> <!-- Add a unique font from Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for star icons -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="fade-in">
+            <h1 class="crazy-font">Vanity</h1>
+            <p>I'm selling the content in the images and videos down below too!</p>
+        </section>
+        <section id="about" class="fade-in">
+            <h2 class="crazy-font">About Me</h2>
+            <p>Hi! I'm Kai! Who has been developing on Roblox for over 4-5 years now and have been doing bits and bops of everything here and there. I am also a Website Developer and code in python, lua, C# and html! I'm a passionate Roblox Studio developer with a knack for creating immersive experiences. I love turning ideas into reality and sharing my creations with the community. If you ever need a website or help with anything please scroll down and you'll see my discord! (Won't be changed!)</p>
+        </section>
+        <section id="gallery" class="fade-in">
+            <h2 class="crazy-font">Gallery</h2>
+            <div class="tabs">
+                <button class="tab-button" data-tab="images">Images</button>
+                <button class="tab-button" data-tab="videos">Videos</button>
+            </div>
+            <div id="images" class="tab-content gallery-content">
+                <!-- Image elements will be inserted here -->
+            </div>
+            <div id="videos" class="tab-content gallery-content">
+                <!-- Video elements will be inserted here -->
+            </div>
+        </section>
+        <section id="testimonials" class="fade-in">
+            <h2 class="crazy-font">Testimonials</h2>
+            <div class="testimonial-list">
+                <!-- Submitted testimonials will be displayed here -->
+            </div>
+            <form id="testimonial-form" class="testimonial-form">
+                <h3>Leave a Review</h3>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <div class="star-rating" id="star-rating">
+                    <i class="fas fa-star" data-rating="1"></i>
+                    <i class="fas fa-star" data-rating="2"></i>
+                    <i class="fas fa-star" data-rating="3"></i>
+                    <i class="fas fa-star" data-rating="4"></i>
+                    <i class="fas fa-star" data-rating="5"></i>
+                </div>
+                <input type="hidden" id="rating" name="rating" required>
+                <textarea id="reason" name="reason" placeholder="Reason for Rating" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="faq" class="fade-in">
+            <h2 class="crazy-font">Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>What services do you offer?</h3>
+                <p>I offer a range of services, including game development, scripting, and asset creation in Roblox Studio.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How can I contact you?</h3>
+                <p>You can add me on Discord at <span class="discord-tag">vsq_zalt</span>.</p>
+            </div>
+        </section>
+    </main>
+    <footer id="contact" class="fade-in">
+        <h2 class="crazy-font">Contact</h2>
+        <p>Feel free to add me on Discord: <span class="discord-tag">vsq_zalt</span>.</p>
+        <p>&copy; 2024 kai's Portfolio. All rights reserved.</p>
+        
+        <!-- Music controls -->
+        <div class="music-controls">
+            <button id="play-music">Play Music</button>
+            <button id="pause-music">Pause Music</button>
+        </div>
+    </footer>
+    
+    <audio id="background-music" loop>
+        <source src="assets/background-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div id="music-modal" class="music-modal">
+        <div class="music-modal-content">
+            <p class="crazy-font">Welcome to Vanity!<br>Click the button below to let us know you're not a bot.</p>
+            <button id="start-music">I'm not a Robot.</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
